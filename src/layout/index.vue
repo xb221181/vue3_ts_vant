@@ -12,15 +12,12 @@ const cachedViews = computed(() => {
 
 <template>
   <div class="app-wrapper">
-    <van-config-provider :theme="useDarkMode() ? 'dark' : 'light'">
-      <nav-bar />
       <router-view v-slot="{ Component }">
         <keep-alive :include="cachedViews">
           <component :is="Component" />
         </keep-alive>
       </router-view>
       <tabbar />
-    </van-config-provider>
   </div>
 </template>
 
