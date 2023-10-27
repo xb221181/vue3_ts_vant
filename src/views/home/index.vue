@@ -78,9 +78,8 @@ const getList = async () => {
   
 <style scoped lang="less">
   .home_box {
-    height: 100%;
+    // height: 100%;
     width: 100%;
-    padding-bottom: 50px;
     background-color: #f5f5f5;
   }
   .home_top {
@@ -109,12 +108,12 @@ const getList = async () => {
   }
   .home_content {
     width: 100%;
-    padding: 5px;
-    padding-bottom: 55px;
+    padding: 0;
     margin: 0;
   }
   .commodity_box {
-    margin: 5px;
+    display: inline-block;
+    margin: 10px 5px 5px 5px;
     background-color: white;
   }
   .commodity_msg {
